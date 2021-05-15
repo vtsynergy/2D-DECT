@@ -14,7 +14,7 @@ Go to the open-source database BIMCV-COVID19+ Database at [here](https://osf.io/
 
 For example, download "bimcv_covid19_posi_subjects_17.tgz". Unzip the downloaded tgz file, it will generate 40 folders, from "sub-S03693" to "sub-S03734". Search the files whose name is end with ".nii.gz" in upziped folders. For example, "/sub-S03693/ses-E08061/mod-rx/sub-S03693_ses-E08061_run-2_bp-chest_ct.nii.gz" is a standard 3D lung CT images. (The size of meaningful 3D CT image is generally larger than 1MB.)
 
-Offer a [help function](https://github.com/vtsynergy/DECT/blob/main/enhancement_model/code/nii_to_tiff.py) to convert .nii.gz to .tif file.
+Offer a [help function](https://github.com/vtsynergy/2D-DECT/blob/main/code/nii_to_tiff.py) to convert .nii.gz to .tif file.
 ## Pre-processing Procedure
 
 **1. Pick AXIAL CT image stacks**
