@@ -54,19 +54,18 @@ The Cuda compilation tools could be download [here](https://developer.nvidia.com
 
 The folder structure should like shown in below:
 ```bash
-/DECT
-  /enhancement_model 
-    /Images    
-      /original_data     
-        /scan1
-          image1.tif
-          image2.tif
-          ...
-        /scan2
-          image1.tif
-          image2.tif
-          ...
+/2D-DECT
+  /Images    
+    /original_data     
+      /scan1
+        image1.tif
+        image2.tif
         ...
+      /scan2
+        image1.tif
+        image2.tif
+        ...
+      ...
 ``` 
 2. run ../DECT/enhancement_model/code/Intergration.py, change the path before run the command.
 
