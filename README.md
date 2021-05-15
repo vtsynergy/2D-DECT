@@ -79,6 +79,3 @@ Following folders are produced as output from enhancement AI.
 2. Images/HU_original: This folder contains original CT scan in seperated folders. Each folder contains TIFF images.
 3. Images/HU_enhanced_nii: The folder contains enhanced CT scan in (.nii) format. Each (.nii) file is a 3D lung CT scans.
 4. Images/HU_original_nii: The folder contains original CT scan in (.nii) format. Each (.nii) file is a 3D lung CT scans.
-
-## Next Step
-The next step is [image segmentation](https://github.com/vtsynergy/DECT/tree/main/seg_model).
