@@ -50,7 +50,7 @@ The Cuda compilation tools could be download [here](https://developer.nvidia.com
 
 ## How to run
 
-1. Followeing the [Pre-processing Instruction](https://github.com/vtsynergy/2D-DECT/blob/main/Pre-processing_Instruction.md), convert all CT scans to TIFF format (TIFF images must be represented in Hounds Field (HF) unit), and put all CT scans in ~/DECT/enhancement_model/Images/original_data/. Each scan should be in seperate folder.
+1. Followeing the [Pre-processing Instruction](https://github.com/vtsynergy/2D-DECT/blob/a739ec299051f5b0526202a456994890cdd8e494/Pre-processing_Instruction.md), convert all CT scans to TIFF format (TIFF images must be represented in Hounds Field (HF) unit), and put all CT scans in ~/DECT/enhancement_model/Images/original_data/. Each scan should be in seperate folder.
 
 The folder structure should like shown in below:
 ```bash
