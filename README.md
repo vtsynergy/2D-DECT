@@ -30,7 +30,7 @@ After installing Python, use the package manager [conda](https://docs.conda.io/e
 Conda:
 ```bash
 conda install numpy
-conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 conda install scikit-image
 conda install -c anaconda pillow
 conda install -c conda-forge matplotlib
