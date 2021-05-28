@@ -1,9 +1,9 @@
 # DenseNet and Deconvolution Neural Network (DDnet) for Image enhancement
 
-DDnet is a convolutional neural network that is used for computed tomography image enhancement. The network uses DenseNet blocks for building feature maps and Deconvolution for image reconstruction. DDnet shows superior performance compared to state of the art CT image reconstrucion/enhancement algorithms. 
+DDnet is a convolutional neural network that is used for computed tomography image enhancement. The network uses DenseNet blocks for building feature maps and Deconvolution for image reconstruction. DDnet shows superior performance compared to state-of-the-art CT image reconstruction/enhancement algorithms.
 
 ## Platform
-We developed the framework on platfrom shown below:
+We developed the framework on the platform shown below:
 
 LSB Version:    :core-4.1-noarch:core-4.1-ppc64le
 
@@ -50,7 +50,7 @@ The Cuda compilation tools could be download [here](https://developer.nvidia.com
 
 ## How to run
 
-1. Followeing the [Pre-processing Instruction](https://github.com/vtsynergy/2D-DECT/blob/a739ec299051f5b0526202a456994890cdd8e494/Pre-processing_Instruction.md), convert all CT scans to TIFF format (TIFF images must be represented in Hounds Field (HF) unit), and put all CT scans in ../2D-DECT/Images/original_data/. Each scan should be in seperate folder.
+1. Following the [Pre-processing Instruction](https://github.com/vtsynergy/2D-DECT/blob/a739ec299051f5b0526202a456994890cdd8e494/Pre-processing_Instruction.md), convert all CT scans to TIFF format (TIFF images must be represented in Hounds Field (HF) unit), and put all CT scans in ../2D-DECT/Images/original_data/. Each scan should be in separate folders.
 
 The folder structure should like shown in below:
 ```bash
@@ -67,7 +67,7 @@ The folder structure should like shown in below:
         ...
       ...
 ``` 
-2. run ../DECT/enhancement_model/code/Integration.py, change the path before run the command.
+2. run ../DECT/enhancement_model/code/Integration.py, change the path before running the command.
 
 ```
 python  ../2D-DECT/code/Integration.py
@@ -75,7 +75,7 @@ python  ../2D-DECT/code/Integration.py
 
 ## Output
 Following folders are produced as output from enhancement AI.
-1. Images/HU_enhanced: This folder contains enhanced images generated as output from AI. Each scan are put in seperate folders. Each folder contains TIFF images.
-2. Images/HU_original: This folder contains original CT scan in seperated folders. Each folder contains TIFF images.
-3. Images/HU_enhanced_nii: The folder contains enhanced CT scan in (.nii) format. Each (.nii) file is a 3D lung CT scans.
-4. Images/HU_original_nii: The folder contains original CT scan in (.nii) format. Each (.nii) file is a 3D lung CT scans.
+1. Images/HU_enhanced: This folder contains enhanced images generated as output from AI. Each scan is put in seperate folders. Each folder contains TIFF images.
+2. Images/HU_original: This folder contains the original CT scans in separated folders. Each folder contains TIFF images.
+3. Images/HU_enhanced_nii: The folder contains enhanced CT scans in (.nii) format. Each (.nii) file is a 3D lung CT scan.
+4. Images/HU_original_nii: The folder contains the original CT scan in (.nii) format. Each (.nii) file is a 3D lung CT scan.
