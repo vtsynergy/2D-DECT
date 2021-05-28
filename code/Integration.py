@@ -8,8 +8,9 @@ import glob
 from subprocess import Popen
 from multiprocessing import Pool
 
-# Replace the ~ with the path in your computer
-mycwd = os.getcwd()
+# mycwd = os.getcwd()
+mycwd = os.path.split(os.path.realpath(__file__))[0]
+# print(os.path.split(os.path.realpath(__file__))[0])
 print('root is: ',mycwd[:-5])
 root = mycwd[:-5]
 
