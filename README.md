@@ -67,7 +67,7 @@ The folder structure should like shown in below:
         ...
       ...
 ``` 
-2. run ../DECT/enhancement_model/code/Integration.py, change the path before running the command.
+2. run ../2d-DECT/code/Integration.py.
 
 ```
 python  ../2D-DECT/code/Integration.py
