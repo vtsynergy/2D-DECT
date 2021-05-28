@@ -32,7 +32,7 @@ Conda:
 conda install numpy
 conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
 conda install scikit-image
-conda install -c anaconda pillow
+conda install -c conda-forge pillow
 conda install -c conda-forge matplotlib
 conda install -c conda-forge nibabel
 ```
