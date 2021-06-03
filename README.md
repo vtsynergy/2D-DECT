@@ -67,10 +67,10 @@ The folder structure should like shown in below:
         ...
       ...
 ``` 
-2. run ../2D-DECT/code/Integration.py.
+2. run Integration.py. The python file could be run from any position.
 
 ```
-python  ../2D-DECT/code/Integration.py
+python  Integration.py
 ```
 
 ## Output
