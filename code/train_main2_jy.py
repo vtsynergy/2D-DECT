@@ -361,8 +361,8 @@ def gen_visualization_files(outputs, targets, inputs, file_names, val_test, maxs
     in_img_root = "./visualize/" + val_test + "/input/"
     out_img_root = "./visualize/" + val_test + "/target/"
 
-    # if not os.path.exists("./visualize"):
-    #     os.makedirs("./visualize")
+    if not os.path.exists("./visualize"):
+        os.makedirs("./visualize")
     if not os.path.exists(out_root):
         os.makedirs(out_root)
     if not os.path.exists(mapped_root):
@@ -567,8 +567,8 @@ def __main__(add):
     test_loader = DataLoader(testset, batch_size=batch, drop_last=False, shuffle=False)
     val_loader = DataLoader(valset, batch_size=batch, drop_last=False, shuffle=False)
 
-
-    model_file = "weights_" + str(epochs) + "_" + str(batch) + ".pt"
+    mycwd = os.path.split(os.path.realpath(__file__))[0]
+    model_file = mycwd[:-5]+"/code/weights_" + str(epochs) + "_" + str(batch) + ".pt"
     transfer_file = "transfer_weight.pt"
 
 
@@ -631,6 +631,9 @@ def __main__(add):
         model.load_state_dict(torch.load(transfer_file, map_location=device))
 
     model.to(device)
+
+
+
 
     if (not(path.exists(model_file))):
 
@@ -772,9 +775,10 @@ def __main__(add):
         #gen_visualization_files(outputs, targets, inputs, test_files[l_map:l_map+batch], "test" )
         gen_visualization_files(outputs, targets, inputs, file_name, "test", maxs, mins)
 
+    
     print("Testing end")
     print("Enhanced images can be found in " + folder_enh_HU)
-    
+
 
     # with open('loss/test_MSE_loss', 'w') as f:
     #     for item in test_MSE_loss:
