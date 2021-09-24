@@ -50,4 +50,4 @@ For each correctly identified axial CT image file from Step 2, manually do the f
 3.3. The above step will export all CT slices.
 
 ## Next Step
-The next step is [image enhancement](https://github.com/vtsynergy/2D-DECT).
+The next step is [2D image enhancement](https://github.com/vtsynergy/2D-DECT) or [3D image enhancement](https://github.com/garvit217-vt/3D-DECT).
